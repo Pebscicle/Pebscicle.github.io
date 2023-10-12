@@ -10,7 +10,7 @@ import LanguageSelector from '../Components/LanguageSelector';
 function Navbar(props) {
   return (
     <nav className='navbar'>
-        <p>content</p>
+        <p>idk content</p>
 
         <LanguageSelector></LanguageSelector>
     </nav>
