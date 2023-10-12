@@ -1,18 +1,30 @@
 //Import React
 import React, { useEffect, useState } from 'react';
 
+//Import Strings
+import enStrings from "./Resources/strings/en.json";
+import frStrings from "./Resources/strings/fr.json";
 //Import Images
 import smiley from './Resources/img/Smiley.jpeg'
 //Import style sheets
 import './App.css';
 //Import components
   //Layout components
+  import Navbar from './Components/Navbar'
   import SubHeader from './Components/Layout/SubHeader';
   import ContentCard from './Components/Layout/ContentCard'
   import VerticalSpacing from './Components/Layout/VerticalSpacing';
 
 function App() {
+
+  //START: APP STATE VARIABLES
+
+  const [language, setLanguage] = useState("en");
+  const strings = language === "en" ? enStrings : frStrings;
+
   const [opacity, setOpacity] = useState(0);
+
+  //END: APP STATE VARIABLES
 
   useEffect(() => {
     const handleScroll = () => {
@@ -53,14 +65,18 @@ function App() {
   return(    
     <div className="App">
       <header className="App-header header-background">
+        <Navbar></Navbar>
+
+        <VerticalSpacing rows="5"></VerticalSpacing>
+
         <img src={smiley} className="App-logo" alt="logo" style={logoStyle} />
-        <p>Paul K. Davis - Portfolio Website</p>
+        <p>{strings.header}</p>
       </header>
       <div className='page-content' style={pageContentStyle}>
 
         <VerticalSpacing rows="5"></VerticalSpacing>
 
-        <SubHeader textContent="Test">{"Paul K. Davis"}</SubHeader>
+        <SubHeader>{strings.header}</SubHeader>
         <ContentCard></ContentCard>
       </div>
     </div>
