@@ -7,12 +7,15 @@ import '../Components/LanguageSelector'
 import LanguageSelector from '../Components/LanguageSelector';
 
 
-function Navbar(props) {
+function Navbar( {handleSwitchLanguage, languageString} ) {
+
+  
+
   return (
     <nav className='navbar'>
-        <p>idk content</p>
+        <p>Paul K. Davis</p>
 
-        <LanguageSelector></LanguageSelector>
+        <LanguageSelector handleSwitchLanguage={(lang) => handleSwitchLanguage(lang)} languageString={languageString}></LanguageSelector>
     </nav>
   );
 }

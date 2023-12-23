@@ -1,6 +1,27 @@
 .language-selector
 {
     height:100%;
-    width: 10%;
-    background-color:red;
+    width: 150px;
 }
+
+.dropdown-button
+{
+    height:100%;
+    width:100%;
+}
+    .dropdown-button:hover{
+        cursor:pointer;
+    }
+
+.language-dropdown
+{
+    position: relative;
+}
+
+.language-option{
+    border-radius: 5% 95% 6% 94% / 95% 5% 95% 5%;
+}
+
+    .language-option:hover{
+        cursor:pointer;
+    }

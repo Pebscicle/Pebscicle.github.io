@@ -26,6 +26,16 @@ function App() {
 
   //END: APP STATE VARIABLES
 
+  //APP EVENTS:
+
+  //Callback Methods
+  const handleSwitchLanguage = (lang) => {
+    let isEnglish = lang === "EN";/*console.log("La langue à été changé au Français")*/
+    console.log(isEnglish ? "Switched the language to English." : "La langue à été changé au Français.")
+
+    setLanguage(isEnglish ? "en" : "fr");
+  }
+
   useEffect(() => {
     const handleScroll = () => {
       const scrollPosition = window.scrollY;
@@ -65,7 +75,7 @@ function App() {
   return(    
     <div className="App">
       <header className="App-header header-background">
-        <Navbar></Navbar>
+        <Navbar handleSwitchLanguage={(lang) => handleSwitchLanguage(lang)} languageString={strings.languages}></Navbar>
 
         <VerticalSpacing rows="5"></VerticalSpacing>
 

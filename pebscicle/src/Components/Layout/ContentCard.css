@@ -3,7 +3,12 @@
   display: flex;
   margin: 2rem auto 0;
   padding: 20px 10px;
+  border-radius:5px;
   width: 90%;
+  background-color: #93a7b4;
+  box-shadow: 10px 10px 19px -8px rgba(0,0,0,0.52);
+  -webkit-box-shadow: 10px 10px 19px -8px rgba(0,0,0,0.52);
+  -moz-box-shadow: 10px 10px 19px -8px rgba(0,0,0,0.52);
 }
 
 .content-card-content
