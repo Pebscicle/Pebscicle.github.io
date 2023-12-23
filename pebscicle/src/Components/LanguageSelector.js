@@ -19,6 +19,11 @@ function LanguageSelector( {handleSwitchLanguage, languageString} ) {
     setShowLanguages(!showLanguages);
   }
 
+  const prehandleSwitchLanguage = (lang) => {
+    toggleLanguageOptions();
+    handleSwitchLanguage(lang);
+  }
+
   //Render content
   return (
     <div className="language-selector">
@@ -26,10 +31,10 @@ function LanguageSelector( {handleSwitchLanguage, languageString} ) {
         {showLanguages && 
           <div className="language-dropdown">
             <img src={English} className="language-option" alt="English" 
-            onClick={() => handleSwitchLanguage("EN")}/>
+            onClick={() => prehandleSwitchLanguage("EN")}/>
 
             <img src={French} className="language-option" alt="French" 
-            onClick={() => handleSwitchLanguage("FR")}/>
+            onClick={() => prehandleSwitchLanguage("FR")}/>
           </div>}
     </div>
   );

@@ -1,6 +1,11 @@
 {
     "header": "Paul Davis - Mon Site Portfolio",
     "languages": "Langues",
-    "about": "À propos de nous",
-    "contact": "Contactez-nous"
+    "aboutHeader": "Je m'appelle Paul.",
+    "about": "En tant qu'étudiant de dernière année en informatique à l'Université de Stirling en Écosse, je vais obtenir mon diplôme en \"Computer Science\" avec distinction en mai 2024. Grâce à mes cours universitaires et à mes expériences de stage, j'ai toujours démontré une forte aptitude au niveau des algorithmes, structures de données, principes de développement de logiciels et divers langages de programmation, notamment Java, C#, JavaScript, ainsi que HTML, CSS et React. Mes compétences en résolution de problèmes et en analyse m'ont permis d'exceller dans les domaines académique et pratique. Je suis convaincu que mes compétences diversifiées et mon dévouement indéfectible à l'excellence feront de moi un atout précieux pour toute organisation à la recherche d'un développeur de logiciels compétent et passionné.",
+    "contact": "Contactez-nous",
+
+    "ALERTS": "NA",
+
+    "languageSwitchedAlert": "La langue à été changé au Français."
   }

@@ -16,6 +16,7 @@
 .language-dropdown
 {
     position: relative;
+    z-index:5;
 }
 
 .language-option{

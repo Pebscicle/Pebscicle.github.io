@@ -4,15 +4,13 @@ import './ContentCard.css';
 
 import React from 'react';
 
+const backgroundColor = "#93a7b4";
 
-function ContentCard(props) {
+function ContentCard({children, isImage}) {
   return (
-    <div className='content-card'>
+    <div className='content-card' style={{ backgroundColor: isImage ? "rgba(255, 255, 255, 0)" : backgroundColor }}>
         <div className='content-card-content'>
-            <p>My name is Paul</p>
-        </div>
-        <div className='content-card-content'>
-            <p>Hello</p>
+            {children}
         </div>
     </div>
   );

@@ -1,6 +1,11 @@
 {
     "header": "Paul K. Davis - Portfolio Website",
     "languages": "Languages",
-    "about": "About Us",
-    "contact": "Contact Us"
+    "aboutHeader": "My name is Paul.",
+    "about": "As a highly motivated and results-oriented fourth-year computer science student at the University of Stirling in Scotland, I am poised to graduate with distinction in May 2024. Through my academic coursework and internship experiences, I have consistently demonstrated a strong aptitude for algorithms, data structures, software development principles, and various programming languages, including Java, C#, JavaScript, as well as HTML, CSS, and React. My strong problem-solving and analytical skills, has enabled me to excel in both academic and practical settings. I am confident that my diverse skillset and unwavering dedication to excellence will make me a valuable asset to any organization seeking a skilled and passionate software developer.",
+    "contact": "Contact Us",
+    
+    "ALERTS": "NA",
+
+    "languageSwitchedAlert": "Switched the language to English."
 }

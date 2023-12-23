@@ -13,7 +13,7 @@ function Navbar( {handleSwitchLanguage, languageString} ) {
 
   return (
     <nav className='navbar'>
-        <p>Paul K. Davis</p>
+        <span>Paul K. Davis</span>
 
         <LanguageSelector handleSwitchLanguage={(lang) => handleSwitchLanguage(lang)} languageString={languageString}></LanguageSelector>
     </nav>

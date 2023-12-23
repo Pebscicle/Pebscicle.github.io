@@ -9,11 +9,15 @@ import smiley from './Resources/img/Smiley.jpeg'
 //Import style sheets
 import './App.css';
 //Import components
+import SocialMedia from './Components/SocialMedia'
   //Layout components
   import Navbar from './Components/Navbar'
   import SubHeader from './Components/Layout/SubHeader';
-  import ContentCard from './Components/Layout/ContentCard'
+  import ContentCard from './Components/Layout/ContentCard';
+  import ContentFlex from './Components/Layout/ContentFlex';
   import VerticalSpacing from './Components/Layout/VerticalSpacing';
+  //MUI Components
+  import Alert from '@mui/material/Alert';
 
 function App() {
 
@@ -24,16 +28,19 @@ function App() {
 
   const [opacity, setOpacity] = useState(0);
 
+  const [showAlert, setShowAlert] = useState(false);
+
   //END: APP STATE VARIABLES
 
   //APP EVENTS:
 
   //Callback Methods
   const handleSwitchLanguage = (lang) => {
-    let isEnglish = lang === "EN";/*console.log("La langue à été changé au Français")*/
+    let isEnglish = lang === "EN";
     console.log(isEnglish ? "Switched the language to English." : "La langue à été changé au Français.")
 
     setLanguage(isEnglish ? "en" : "fr");
+    setShowAlert(true);
   }
 
   useEffect(() => {
@@ -76,19 +83,30 @@ function App() {
     <div className="App">
       <header className="App-header header-background">
         <Navbar handleSwitchLanguage={(lang) => handleSwitchLanguage(lang)} languageString={strings.languages}></Navbar>
-
         <VerticalSpacing rows="5"></VerticalSpacing>
 
         <img src={smiley} className="App-logo" alt="logo" style={logoStyle} />
         <p>{strings.header}</p>
       </header>
       <div className='page-content' style={pageContentStyle}>
-
-        <VerticalSpacing rows="5"></VerticalSpacing>
-
-        <SubHeader>{strings.header}</SubHeader>
+        
+        <ContentFlex>
+          <div className="App-text-content">
+            <h2>{strings.aboutHeader}</h2>
+            <p>{strings.about}</p>
+            <SocialMedia></SocialMedia>
+          </div>
+          <ContentCard isImage={true}>
+            <img src="https://www.treehugger.com/thmb/iayN8kOoAdb190hXrlG9KdZEb8Q=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/__opt__aboutcom__coeus__resources__content_migration__mnn__images__2015__09__river-otters-lead-photo-86eef01e35714da9a6dd974f321e3504.jpg" width="65%" height="auto"></img>
+          </ContentCard>
+        </ContentFlex>
+        <ContentFlex>
+          <p>gsuydfguys</p>
+        </ContentFlex>
+        
         <ContentCard></ContentCard>
       </div>
+      {showAlert && <Alert severity="success" className="App-alert" onClose={() => setShowAlert(false)}>{strings.languageSwitchedAlert}</Alert>}
     </div>
   );
 
