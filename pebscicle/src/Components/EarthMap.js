@@ -13,7 +13,6 @@ function EarthMap( {} ) {
 
     useEffect(() => {
 
-        //mapboxgl.accessToken = 'pk.eyJ1IjoicGVic2NpY2xlIiwiYSI6ImNsY2VxeTYwOTAxbDkzdnBrdnhqMWcyZnoifQ.i2QhIgkAlYKEV_ygXU62YA';
         mapboxgl.accessToken = process.env.REACT_APP_MAPBOX_ACCESS_TOKEN;
 
         const map = new mapboxgl.Map({
