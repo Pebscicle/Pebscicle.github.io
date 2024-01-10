@@ -1,18 +1,18 @@
 {
   "files": {
     "main.css": "/Pebscicle/static/css/main.34efcc09.css",
-    "main.js": "/Pebscicle/static/js/main.2fa797f2.js",
+    "main.js": "/Pebscicle/static/js/main.8f286497.js",
     "static/js/787.a673c1c9.chunk.js": "/Pebscicle/static/js/787.a673c1c9.chunk.js",
     "static/media/Yosemite.jpeg": "/Pebscicle/static/media/Yosemite.5f5c1c7df4b857bf0472.jpeg",
     "index.html": "/Pebscicle/index.html",
     "static/media/flag-usa.svg": "/Pebscicle/static/media/flag-usa.bbbd9f5266841b5c49cc50c7be63ae09.svg",
     "static/media/flag-france.svg": "/Pebscicle/static/media/flag-france.78df1f5ffc0623dbfa992878e0be9aa3.svg",
     "main.34efcc09.css.map": "/Pebscicle/static/css/main.34efcc09.css.map",
-    "main.2fa797f2.js.map": "/Pebscicle/static/js/main.2fa797f2.js.map",
+    "main.8f286497.js.map": "/Pebscicle/static/js/main.8f286497.js.map",
     "787.a673c1c9.chunk.js.map": "/Pebscicle/static/js/787.a673c1c9.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.34efcc09.css",
-    "static/js/main.2fa797f2.js"
+    "static/js/main.8f286497.js"
   ]
 }
