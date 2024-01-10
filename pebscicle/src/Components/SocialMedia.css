@@ -1,6 +1,7 @@
 .social-medias{
     display: flex;
     justify-content: center;
+    align-items: center;
 }
 
     .social-medias > * {
@@ -8,6 +9,8 @@
         transition: box-shadow 0.5s ease;
         transition: -webkit-box-shadow 0.5s ease;
         transition: -moz-box-shadow 0.5s ease;
+        transition: border 0.5s ease;
+        border: 1px solid #FFFFFF;
         border-radius: 5px;
     }
         .social-medias > *:hover {
@@ -15,4 +18,5 @@
             box-shadow: 10px 10px 19px -8px rgba(0,0,0,0.52);
             -webkit-box-shadow: 10px 10px 19px -8px rgba(0,0,0,0.52);
             -moz-box-shadow: 10px 10px 19px -8px rgba(0,0,0,0.52);
+            border: 1px solid black;
         }

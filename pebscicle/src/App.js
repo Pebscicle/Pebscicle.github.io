@@ -10,6 +10,7 @@ import smiley from './Resources/img/Smiley.jpeg'
 import './App.css';
 //Import components
 import SocialMedia from './Components/SocialMedia'
+import EarthMap from './Components/EarthMap';
   //Layout components
   import Navbar from './Components/Navbar'
   import SubHeader from './Components/Layout/SubHeader';
@@ -88,24 +89,29 @@ function App() {
         <img src={smiley} className="App-logo" alt="logo" style={logoStyle} />
         <p>{strings.header}</p>
       </header>
+      
       <div className='page-content' style={pageContentStyle}>
         
         <ContentFlex>
           <div className="App-text-content">
             <h2>{strings.aboutHeader}</h2>
             <p>{strings.about}</p>
-            <SocialMedia></SocialMedia>
+            <SocialMedia languageString={strings.resume}></SocialMedia>
           </div>
           <ContentCard isImage={true}>
             <img src="https://www.treehugger.com/thmb/iayN8kOoAdb190hXrlG9KdZEb8Q=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/__opt__aboutcom__coeus__resources__content_migration__mnn__images__2015__09__river-otters-lead-photo-86eef01e35714da9a6dd974f321e3504.jpg" width="65%" height="auto"></img>
           </ContentCard>
         </ContentFlex>
+        
+        <div className="App-text-content">
+          <h2>{strings.whereFrom}</h2>
+        </div>
         <ContentFlex>
-          <p>gsuydfguys</p>
+          <EarthMap></EarthMap>
         </ContentFlex>
         
-        <ContentCard></ContentCard>
       </div>
+      
       {showAlert && <Alert severity="success" className="App-alert" onClose={() => setShowAlert(false)}>{strings.languageSwitchedAlert}</Alert>}
     </div>
   );

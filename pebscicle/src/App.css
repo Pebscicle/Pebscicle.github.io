@@ -30,10 +30,13 @@
   opacity: 0;
   transition: opacity 0.5s;
   width: 100%;
-  padding: 20px;
   position:absolute;
   margin-top:100vh;
 }
+
+  .page-content > *{
+    margin: 20px;
+  }
 
 .App-text-content{
   width:60%;
