@@ -1,39 +1,40 @@
-//Import React
-import React, { useEffect, useState } from 'react';
+'use client'
+
+import Image from "next/image";
+import Link from 'next/link';
 
 //Import Strings
-import enStrings from "./resources/strings/en.json";
-import frStrings from "./resources/strings/fr.json";
+import enStrings from "../resources/strings/en.json";
+import frStrings from "../resources/strings/fr.json";
 //Import Images
-import smiley from './resources/img/Smiley.jpeg'
-//Import style sheets
-import './App.css';
-//Import components
-import SocialMedia from './components/SocialMedia'
-import EarthMap from './components/EarthMap';
-import MapGrid from './components/MapGrid';
+import smiley from '../resources/img/Smiley.jpeg'
 
-import Particle from './components/Particles/Particle';
+//Import components
+import SocialMedia from '../components/SocialMedia'
+import EarthMap from '../components/EarthMap';
+import MapGrid from '../components/MapGrid';
+
+import Particle from '../components/Particles/Particle';
   //Layout components
-  import Navbar from './components/Navbar'
-  import SubHeader from './components/Layout/SubHeader';
-  import BouncingArrow from './components/Layout/BouncingArrow';
-  import ContentCard from './components/Layout/ContentCard';
-  import ContentFlex from './components/Layout/ContentFlex';
-  import VerticalSpacing from './components/Layout/VerticalSpacing';
+  import Navbar from '../components/Navbar'
+  import SubHeader from '../components/Layout/SubHeader';
+  import BouncingArrow from '../components/Layout/BouncingArrow';
+  import ContentCard from '../components/Layout/ContentCard';
+  import ContentFlex from '../components/Layout/ContentFlex';
+  import VerticalSpacing from '../components/Layout/VerticalSpacing';
   //MUI Components
   import Alert from '@mui/material/Alert';
 
-function App() {
+import { useEffect, useState } from 'react';
 
-  //START: APP STATE VARIABLES
+export default function Home() {
 
-  const [language, setLanguage] = useState("en");
-  const strings = language === "en" ? enStrings : frStrings;
+    const [language, setLanguage] = useState("en");
+    const strings = language === "en" ? enStrings : frStrings;
 
-  const [opacity, setOpacity] = useState(0);
+    const [opacity, setOpacity] = useState(0);
 
-  const [showAlert, setShowAlert] = useState(false);
+    const [showAlert, setShowAlert] = useState(false);
 
   //END: APP STATE VARIABLES
 
@@ -88,14 +89,13 @@ function App() {
     height: logoSize + 'px',
   };
 
-  
-  return(    
-    <div className="App">
+  return (
+    <main className="">
       <header className="App-header header-background">
         <Navbar handleSwitchLanguage={(lang) => handleSwitchLanguage(lang)} languageString={strings.languages}></Navbar>
         <VerticalSpacing rows="5"></VerticalSpacing>
 
-        <img src={smiley} className="App-logo" alt="logo" style={logoStyle} />
+        <img src={smiley.src} className="App-logo" alt="logo" style={logoStyle} />
         <p>{strings.header}</p>
 
         <BouncingArrow handleArrowClick={() => handleArrowClick()} ></BouncingArrow>
@@ -145,9 +145,7 @@ function App() {
       </div>
       
       {showAlert && <Alert severity="success" className="App-alert" onClose={() => setShowAlert(false)}>{strings.languageSwitchedAlert}</Alert>}
-    </div>
-  );
-  
-}
 
-export default App;
+    </main>
+  );
+}

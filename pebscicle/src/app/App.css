@@ -16,7 +16,7 @@
 }
 
 .header-background {
-  background-image: url('./Resources/img/Yosemite.jpeg');
+  background-image: url('../resources/img/Yosemite.jpeg');
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;

@@ -13,8 +13,7 @@ function EarthMap( {} ) {
 
     useEffect(() => {
 
-        mapboxgl.accessToken = process.env.NEXT_PUBLIC_MAPBOX_ACCESS_TOKEN;
-
+        mapboxgl.accessToken = process.env.REACT_APP_MAPBOX_ACCESS_TOKEN;
 
         const map = new mapboxgl.Map({
           container: 'map', // Replace with the actual DOM ID

@@ -1,0 +1,13 @@
+.map-flex{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.map-flex-tile{
+    width: 300px;
+    height: auto;
+    background-color: #3e3b3b;
+    border-radius: 5px;
+    padding: 5px;
+    margin-left: 10px;
+}
