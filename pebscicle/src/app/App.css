@@ -1,3 +1,7 @@
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
+
 .App {
   
 }
@@ -10,7 +14,7 @@
   justify-content: top;
   font-size: calc(10px + 2vmin);
   color: white;
-  position: fixed;
+
   width: 100%;
   z-index: -1;
 }
@@ -24,20 +28,55 @@
   height:100vh;
 }
 
+.page{
+  display: flex;
+  justify-content: center;
+}
+
 .page-content
 {
   background-color: white;
   opacity: 0;
   transition: opacity 0.5s;
-  width: 100%;
-  position:absolute;
-  margin-top:100vh;
+  width: 800px;
+  margin-top:25px;
+  padding: 24px;
 }
 
   .page-content > * {
     margin-left:15px;
     margin-right:15px;
   }
+
+.page-margins{
+  width:800px;
+}
+  @media screen and (max-width: 800px) {
+    .page-margins {
+      width: 95vw;
+      padding: 0px 8px;
+    }
+  }
+
+.page-img-container{
+  display: grid;
+  grid-template-rows: auto 1fr; /* Adjust the rows as needed */
+  justify-items: center; /* Center items horizontally */
+  padding: 24px 0px;
+}
+
+.page-img{
+  width: auto;
+  height: 80vh;
+  grid-row: 1; /* Place the image in the first row */
+}
+
+figcaption{
+  font-size: 0.875rem; /* 14px */
+  line-height: 1.25rem; /* 20px */
+  font-style: italic;
+  grid-row: 2; /* Place the image in the second row */
+}
 
 .App-text-content{
   width:60%;

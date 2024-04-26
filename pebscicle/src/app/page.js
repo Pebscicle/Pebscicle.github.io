@@ -26,6 +26,7 @@ import Particle from '../components/Particles/Particle';
   import Alert from '@mui/material/Alert';
 
 import { useEffect, useState } from 'react';
+import ProjectsGrid from "../components/projectsGrid";
 
 export default function Home() {
 
@@ -52,6 +53,7 @@ export default function Home() {
   const handleArrowClick = () => {
     console.log("Arrow clicked");
     document.getElementById('page-content').scrollIntoView();
+    window.scrollBy(0, -60);
   }
 
   useEffect(() => {
@@ -98,50 +100,59 @@ export default function Home() {
         <img src={smiley.src} className="App-logo" alt="logo" style={logoStyle} />
         <p>{strings.header}</p>
 
-        <BouncingArrow handleArrowClick={() => handleArrowClick()} ></BouncingArrow>
       </header>
+      <BouncingArrow handleArrowClick={() => handleArrowClick()} ></BouncingArrow>
       
-      <div id="page-content" className='page-content' style={pageContentStyle}>
-        
-        <ContentFlex>
-          <div className="App-text-content">
-            <h2>{strings.aboutHeader}</h2>
-            <p>{strings.about}</p>
-            <SocialMedia></SocialMedia>
-          </div>
-          <ContentCard isImage={true}>
-            <img src="https://www.treehugger.com/thmb/iayN8kOoAdb190hXrlG9KdZEb8Q=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/__opt__aboutcom__coeus__resources__content_migration__mnn__images__2015__09__river-otters-lead-photo-86eef01e35714da9a6dd974f321e3504.jpg" width="65%" height="auto"></img>
-          </ContentCard>
-        </ContentFlex>
+      <div className='page'>
+        <div id="page-content" className='page-content' style={pageContentStyle}>
+          
+          <ContentFlex>
+            <div className="">
+              <h1 className='text-2xl pb-2'>{strings.aboutHeader}</h1>
+              <p>{strings.about}</p>
+              <SocialMedia></SocialMedia>
+            </div>
+            <ContentCard isImage={true}>
+              <img src="https://www.treehugger.com/thmb/iayN8kOoAdb190hXrlG9KdZEb8Q=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/__opt__aboutcom__coeus__resources__content_migration__mnn__images__2015__09__river-otters-lead-photo-86eef01e35714da9a6dd974f321e3504.jpg" width="65%" height="auto"></img>
+            </ContentCard>
+          </ContentFlex>
 
-        <VerticalSpacing rows="5"></VerticalSpacing>
+          <VerticalSpacing rows="5"></VerticalSpacing>
 
-        <ContentFlex>
-          <div className="App-text-content">
-            <h2>{strings.whereFrom}</h2>
-          </div>
-          <EarthMap></EarthMap>
-          <div style={{marginLeft:"10px"}}>
-            <h3>Notable Places</h3>
-            <ul>
-              <li>Chicago</li>
-              <li>Maryland</li>
-              <li>Michigan</li>
-              <li>France</li>
-              <li>Scotland</li>
-            </ul>
-          </div>
-        </ContentFlex>
+          <ContentFlex>
+            <div className="App-text-content">
+              <h2>{strings.whereFrom}</h2>
+            </div>
+            <EarthMap></EarthMap>
+            <div style={{marginLeft:"10px"}}>
+              <h3>Notable Places</h3>
+              <ul>
+                <li>Chicago</li>
+                <li>Maryland</li>
+                <li>Michigan</li>
+                <li>France</li>
+                <li>Scotland</li>
+              </ul>
+            </div>
+          </ContentFlex>
 
-        <ContentFlex>
-          <div className="App-text-content">
+
+          <div className="pt-8">
             <h2>{strings.whatDo}</h2>
-          </div>
-          <MapGrid />
-        </ContentFlex>
 
-       
-        
+            <h3 className="pt-24 pb-8">{strings.myProjects}</h3>
+
+            <ProjectsGrid />
+
+            <h3 className="pt-24">{strings.myInterests}</h3>
+
+            <MapGrid />
+          </div>
+          
+
+
+
+        </div>
       </div>
       
       {showAlert && <Alert severity="success" className="App-alert" onClose={() => setShowAlert(false)}>{strings.languageSwitchedAlert}</Alert>}

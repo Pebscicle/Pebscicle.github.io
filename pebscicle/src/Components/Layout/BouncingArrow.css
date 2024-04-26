@@ -1,6 +1,6 @@
 .arrow-container{
-    position: relative;
-    top: 200px;
+  position: relative;
+  bottom: 100px;
 }
 
 .arrow-container .bouncing-arrow {
