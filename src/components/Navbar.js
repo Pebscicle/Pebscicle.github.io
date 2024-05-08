@@ -5,8 +5,8 @@ import React from 'react';
 import './Navbar.css';
 
 import Link from 'next/link';
-import '../Components/LanguageSelector'
-import LanguageSelector from '../Components/LanguageSelector';
+import './LanguageSelector'
+import LanguageSelector from './LanguageSelector';
 
 
 function Navbar( {handleSwitchLanguage, languageString} ) {

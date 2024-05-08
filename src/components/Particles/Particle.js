@@ -1,7 +1,7 @@
 
 import React, { useState } from 'react';
 
-import '../Particles/Particle.css';
+import './Particle.css';
 
 
 function Particle( {children} ) {

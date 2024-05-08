@@ -1,7 +1,7 @@
 
 import React from 'react';
 
-import '../Layout/BouncingArrow.css';
+import './BouncingArrow.css';
 
 import arrowImage from '../../resources/img/icons/down-arrow.png';
 
