@@ -123,7 +123,7 @@ export default function Home() {
             <div className="App-text-content">
               <h2>{strings.whereFrom}</h2>
             </div>
-            <EarthMap></EarthMap>
+            {true ? <></> : <EarthMap></EarthMap>}
             <div style={{marginLeft:"10px"}}>
               <h3>Notable Places</h3>
               <ul>
