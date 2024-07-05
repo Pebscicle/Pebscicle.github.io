@@ -18,8 +18,12 @@ export default function ProjectsGrid() {
             imgURL={"/PickyourgcScreenshot.png"}
             link={'/pickyourgc'}
             /> 
-            <div className='bg-gray-200 p-4'>Element 2</div>
-            <div className='bg-gray-200 p-4'>Element 3</div>
+            <ProjectCard 
+            title={"atlaster.com"}
+            description={"A Next.js website that users can use to track their exploration of the world."}
+            imgURL={"/AtlasterScreenshot.png"}
+            link={'/atlaster'}
+            /> 
         </div>
     );
 }

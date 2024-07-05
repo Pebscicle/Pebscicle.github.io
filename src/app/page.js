@@ -112,16 +112,13 @@ export default function Home() {
               <p>{strings.about}</p>
               <SocialMedia></SocialMedia>
             </div>
-            <ContentCard isImage={true}>
-              <img src="https://www.treehugger.com/thmb/iayN8kOoAdb190hXrlG9KdZEb8Q=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/__opt__aboutcom__coeus__resources__content_migration__mnn__images__2015__09__river-otters-lead-photo-86eef01e35714da9a6dd974f321e3504.jpg" width="65%" height="auto"></img>
-            </ContentCard>
           </ContentFlex>
 
           <VerticalSpacing rows="5"></VerticalSpacing>
 
           <ContentFlex>
             <div className="App-text-content">
-              <h2>{strings.whereFrom}</h2>
+              <h2 className="text-xl font-bold">{strings.whereFrom}</h2>
             </div>
             {true ? <></> : <EarthMap></EarthMap>}
             <div style={{marginLeft:"10px"}}>
@@ -138,13 +135,12 @@ export default function Home() {
 
 
           <div className="pt-8">
-            <h2>{strings.whatDo}</h2>
 
-            <h3 className="pt-24 pb-8">{strings.myProjects}</h3>
+            <h3 className="pt-2 pb-8 text-xl font-bold">{strings.myProjects}</h3>
 
             <ProjectsGrid />
 
-            <h3 className="pt-24">{strings.myInterests}</h3>
+            <h3 className="pt-24 text-xl font-bold">{strings.myInterests}</h3>
 
             <MapGrid />
           </div>
