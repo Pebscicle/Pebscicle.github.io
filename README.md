@@ -4,7 +4,7 @@
   <body>
     <h1>Here is my personal website: <a href="https://pebscicle.github.io/Pebscicle/">https://pebscicle.github.io/Pebscicle/</a></h1>
 
-    <h2>In progress atlas/exploration website: <a href="atlaster.com">Atlaster</a></h2
+    <h2>In progress atlas/exploration website: <a href="atlaster.com">Atlaster</a></h2>
 
     <p>My name is Paul Davis, I’m a 4th year computer science student graduating in May 2024 with honors from the University of Stirling.
 I am passionate about geography and maps and could spend hours looking at them.
