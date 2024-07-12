@@ -12,7 +12,9 @@ import resume from '../resources/img/icons/socialMedia-resume.png';
 
 //<a href="https://www.flaticon.com/free-icons/github" title="github icons">Github icons created by riajulislam - Flaticon</a>
 
-function SocialMedia( ) {
+function SocialMedia( {lang} ) {
+
+  const resumeLink = lang === 'en' ? "/Paul K. Davis Resume 2024.pdf" : "/cvPaulDavis.pdf";
 
   return (
     <div className='social-medias'>
@@ -20,7 +22,7 @@ function SocialMedia( ) {
         <a href="https://www.linkedin.com/in/paul---davis/" target="_blank" title='LinkedIn'><img src={linkedin.src} alt="LinkedIn" height="48" width="48"></img></a>
         <a href="mailto:paul.davis438@gmail.com" title='Email'><img src={email.src} alt="Email" height="48" width="48"></img></a>
         {/*IMPLEMENT CONDITIONAL DOWNLOADING BASED ON THE SELECTED LANGUAGE*/}
-        <a href="/Paul K. Davis Resume 2024.pdf" target="_blank" title='Resume/CV'><img src={resume.src} alt="Resume" height="48" width="48"></img></a>
+        <a href={resumeLink} target="_blank" title='Resume/CV'><img src={resume.src} alt="Resume" height="48" width="48"></img></a>
     </div>
   );
 }

@@ -113,7 +113,7 @@ export default function Home() {
               <h1 className='text-2xl pb-2 font-semibold flex justify-center'>{strings.aboutHeader}</h1>
               <div className='flex justify-center pt-8 pb-16'> <img src={'/pauldavis.jpeg'} alt='Headshot of Paul Davis' height={100} width={100} className='rounded-full'/> </div>
               <p className='text-justify'>{strings.about}</p>
-              <SocialMedia></SocialMedia>
+              <SocialMedia lang={language}></SocialMedia>
             </article>
           </ContentFlex>
 
