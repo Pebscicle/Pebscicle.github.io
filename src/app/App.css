@@ -58,17 +58,17 @@
     }
   }
 
-.page-img-container{
+.page-img-container {
   display: grid;
-  grid-template-rows: auto 1fr; /* Adjust the rows as needed */
-  justify-items: center; /* Center items horizontally */
+  grid-template-columns: 1fr;  /* One column for the image */
+  justify-items: center;
   padding: 24px 0px;
 }
 
-.page-img{
-  width: auto;
-  height: 80vh;
-  grid-row: 1; /* Place the image in the first row */
+.page-img {
+  width: 100%;  /* Fill the entire grid cell width */
+  height: auto;  /* Let height adjust based on image aspect ratio */
+  object-fit: cover;  /* Maintain aspect ratio, cover the area */
 }
 
 figcaption{

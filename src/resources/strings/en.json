@@ -1,13 +1,28 @@
 {
-    "header": "Paul K. Davis - Portfolio Website",
+    "currentLanguage": "en",
+    "header": "Paul K. Davis - Portfolio",
     "languages": "Languages",
     "aboutHeader": "My name is Paul.",
-    "about": "As a highly motivated and results-oriented fourth-year computer science student at the University of Stirling in Scotland, I am poised to graduate with distinction in May 2024. Through my academic coursework and internship experiences, I have consistently demonstrated a strong aptitude for algorithms, data structures, software development principles, and various programming languages, including Java, C#, JavaScript, as well as HTML, CSS, and React. My strong problem-solving and analytical skills, has enabled me to excel in both academic and practical settings. I am confident that my diverse skillset and unwavering dedication to excellence will make me a valuable asset to any organization seeking a skilled and passionate software developer.",
+    "about": "I recently graduated with a Bachelor's of Science with Honors in Computer Science from the University of Stirling in Scotland. I am a hardworking and highly motivated Full-Stack Developer with exceptional adaptation skills as exemplified by my life experience. My expertise includes the front-end web development stack (HTML, CSS, JavaScript) and extensive experience with the React ecosystem (React, Next.js, React Native) and Blazor. I am proficient in building user-centric interfaces that prioritize user experience (UX). My back-end knowledge encompasses languages like Java and C#, along with proficiency in SQL, relational and NoSQL databases, and version control systems such as Git. Additionally, I have experience using frameworks like Spring Boot, and have designed secure and well-structured APIs that follow RESTful principles. Also, in part thanks to my academic coursework and internship experiences, I have consistently demonstrated a strong aptitude for algorithms, data structures, software development principles, and various programming languages. To clarify, my experience growing up in both France and the United States has instilled in me a strong sense of adaptability. Navigating different cultures and social norms honed my ability to learn quickly, adjust to new environments, and effectively communicate with diverse people. My strong problem-solving and analytical skills, enable me to excel in both academic and practical settings. I am confident that my diverse skillset and unwavering dedication to excellence will make me a valuable asset to any organization seeking a skilled and passionate developer.",
     "contact": "Contact Us",
     "whereFrom": "Where I am from",
     "myProjects": "My projects",
     "myInterests": "My interests",
-    
+
+    "PROJECTS": "NA",
+    "personalizedExplorationTrackingTitle": "Personalized Exploration Tracking App",
+    "personalizedExplorationTrackingDescription": "A React Native application created in my final year for enhancing personalization when it comes to exploration.",
+    "personalizedExplorationTrackingSummary": "Personalized Exploration Tracking is a cross-platform React Native application I developed during my senior year studying Computer Science at the University of Stirling. It was conceived from start to finish following the software development cycle, from gathering the requirements, the design, the implementation, and final testing.",
+    "personalizedExplorationTrackingCaption": "Screenshot of the app's main page UI.",
+    "personalizedExplorationTrackingParagraph1": "The purpose of the application is to enable a wider array of users to benefit from enhanced means of visualizing and understanding one's exploration of the world.",
+    "personalizedExplorationTrackingParagraph2": "By allowing users to input custom origins and destinations, they are capable of generating a cumulative viewshed between A and B, which simulates the visualizable areas along the given generated route.",
+    "pickyourgcDescription": "A Next.js website designed for a client specializing in the role of General Counsel (GC) within an organization.",
+    "pickyourgcSummary": "This Next.js website was designed for a client specializing in the role of General Counsel (GC) within an organization. It features a personalized quiz that helps users identify their ideal legal model. Fully optimized for mobile devices, the website also offers a contact page to make it easy for users to reach out to the General Counsel for any legal assistance.",
+    "pickyourgcCaption": "Screenshot from pickyourgc.com .",
+    "atlasterDescription": "An interactive web application built with the Next.js framework, empowering users to learn about the world and visually chronicle their global exploration.",
+    "atlasterSummary": "Atlaster is an interactive web application built with Next.js, designed to ignite your global curiosity. Explore the world at your fingertips: Click on any country on the map to delve into its unique characteristics. Dive deeper into the USA: Explore states and learn about facts including finding the GDP per capita of exisiting states as well as for hypothetical states through the 'State Creator' tool. Uncover trends and make predictions: View recent election results and engage with interactive features like predicting the outcomes of future elections. Atlaster empowers users to learn about the world and visually chronicle their global exploration journey.",
+    "atlasterCaption": "Screenshot of the USA map page.",
+
     "ALERTS": "NA",
 
     "languageSwitchedAlert": "Switched the language to English."

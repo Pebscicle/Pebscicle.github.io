@@ -1,14 +1,29 @@
 {
-    "header": "Paul Davis - Mon Site Portfolio",
-    "languages": "Langues",
-    "aboutHeader": "Je m'appelle Paul.",
-    "about": "En tant qu'étudiant de dernière année en informatique à l'Université de Stirling en Écosse, je vais obtenir mon diplôme en \"Computer Science\" avec distinction en mai 2024. Grâce à mes cours universitaires et à mes expériences de stage, j'ai toujours démontré une forte aptitude au niveau des algorithmes, structures de données, principes de développement de logiciels et divers langages de programmation, notamment Java, C#, JavaScript, ainsi que HTML, CSS et React. Mes compétences en résolution de problèmes et en analyse m'ont permis d'exceller dans les domaines académique et pratique. Je suis convaincu que mes compétences diversifiées et mon dévouement indéfectible à l'excellence feront de moi un atout précieux pour toute organisation à la recherche d'un développeur de logiciels compétent et passionné.",
-    "contact": "Contactez-nous",
-    "whereFrom": "Mes origines",
-    "myProjects": "Mes projets",
-    "myInterests": "Mes intérêts",
+  "currentLanguage": "fr",
+  "header": "Paul Davis - Portfolio",
+  "languages": "Langues",
+  "aboutHeader": "Je m'appelle Paul.",
+  "about": "J'ai récemment été diplômé d'une licence en informatique de l'Université de Stirling en Écosse (Bachelor's of Science with Honors). Développeur Full-Stack assidu et très motivé, je possède des capacités d'adaptation exceptionnelles, comme le démontre mon expérience de vie. Mon expertise comprend la pile de logiciel du développement web front-end (HTML, CSS, JavaScript) ainsi qu'une expérience approfondie de l'écosystème React (React, Next.js, React Native) et de Blazor. Je maîtrise la création d'interfaces centrées sur l'utilisateur qui donnent la priorité à l'expérience utilisateur (UX). Mes connaissances back-end englobent des langages comme Java et C#, ainsi qu'une maîtrise de SQL, des bases de données relationnelles et NoSQL et des systèmes de contrôle de version tels que Git. De plus, j'ai de l'expérience avec des frameworks comme Spring Boot et j'ai conçu des API sécurisées et bien structurées qui suivent les principes RESTful. De plus, grâce en partie à mes cours universitaires et à mes stages, j'ai constamment démontré une forte aptitude pour les algorithmes, les structures de données, les principes de développement de logiciels et divers langages de programmation. Pour clarifier, mon expérience de vie en France et aux États-Unis m'a inculqué une forte capacité d'adaptation. Naviguer dans différentes cultures et normes sociales a aiguisé ma capacité à apprendre rapidement, à m'adapter à de nouveaux environnements et à communiquer efficacement avec des personnes diverses. Mes solides compétences en résolution de problèmes et en analyse me permettent d'exceller dans des contextes à la fois académiques et pratiques. Je suis convaincu que mes compétences diversifiées et mon dévouement sans faille à l'excellence feront de moi un atout précieux pour toute organisation à la recherche d'un développeur compétent et passionné.",
+  "contact": "Contactez-nous",
+  "whereFrom": "Mes origines",
+  "myProjects": "Mes projets",
+  "myInterests": "Mes intérêts",
 
-    "ALERTS": "NA",
+  "PROJECTS": "NA",
+  "personalizedExplorationTrackingTitle": "Application de Suivi d'Exploration Personnalisée",
+  "personalizedExplorationTrackingDescription": "Une application React Native créée lors de ma dernière année pour améliorer la personnalisation dans le domaine de l'exploration.",
+  "personalizedExplorationTrackingSummary": "Personalized Exploration Tracking est une application React Native multiplateforme que j'ai développée pendant ma dernière année d'études en informatique à l'Université de Stirling. Elle a été conçue du début à la fin en suivant le cycle de développement logiciel, de la collecte des besoins à la conception, en passant par l'implémentation et les tests utilisateurs finaux.",
+  "personalizedExplorationTrackingCaption": "Capture d'écran de l'interface utilisateur de la page principale de l'application",
+  "personalizedExplorationTrackingParagraph1": "Le but de l'application est de permettre à un plus large éventail d'utilisateurs de bénéficier de moyens améliorés pour visualiser et comprendre leur exploration du monde.",
+  "personalizedExplorationTrackingParagraph2": "En permettant aux utilisateurs de saisir des origines et des destinations personnalisées, ils sont capables de générer un champ de vision cumulé entre A et B, ce qui simule les zones visualisables le long de l'itinéraire généré.",
+  "pickyourgcDescription": "Site web Next.js conçu pour un client spécialisé dans le rôle de juriste d'entreprise (General Counsel - GC) au sein d'une organisation.",
+  "pickyourgcSummary": "Ce site web Next.js a été conçu pour un client spécialisé dans le rôle de juriste d'entreprise (General Counsel - GC) au sein d'une organisation. Il propose un quiz personnalisé permettant aux utilisateurs d'identifier le modèle juridique idéal pour leurs besoins. Entièrement optimisé pour les mobiles, le site offre également une page de contact pour faciliter la prise de contact avec le juriste d'entreprise pour toute demande d'assistance juridique.",
+  "pickyourgcCaption": "Capture d'écran de pickyourgc.com",
+  "atlasterDescription": "Une application web interactive développée avec le Framework Next.js, permettant aux utilisateurs de découvrir le monde et retracer visuellement leur parcours d'exploration à travers le monde.",
+  "atlasterSummary": "Atlaster est une application web interactive développée avec le Framework Next.js, conçue pour éveiller votre curiosité pour le monde. Explorez le monde du bout des doigts : cliquez sur n'importe quel pays sur la carte pour découvrir ses caractéristiques uniques. Plongez au cœur des États-Unis : explorez les États et découvrez des informations telles que le PIB par habitant des États existants, ainsi que des États hypothétiques grâce à l'outil « State Creator ». Découvrez les tendances et faites des prédictions : consultez les résultats des élections récentes et utilisez des fonctionnalités interactives pour prédire les issues des élections futures. Atlaster permet aux utilisateurs d'en apprendre davantage sur le monde et de retracer visuellement leur voyage d'exploration mondiale.",
+  "atlasterCaption": "Capture d'écran de la page de la carte des États-Unis.",
 
-    "languageSwitchedAlert": "La langue à été changé au Français."
-  }
+  "ALERTS": "NA",
+
+  "languageSwitchedAlert": "La langue à été changé au Français."
+}

@@ -3,7 +3,7 @@
 import { useEffect, useState } from 'react';
 import Link from 'next/link';
  
-export default function ProjectCard( {title, description, imgURL, link} ) {
+export default function ProjectCard( {title, description, imgURL, link, hyperLink} ) {
     return (
         <div className='bg-gray-50 pb-4 rounded shadow-md flex justify-around flex-col'>
             <div>
@@ -15,7 +15,7 @@ export default function ProjectCard( {title, description, imgURL, link} ) {
                     />
                 </div>
                 <div className=''>
-                    <h3 className='px-4 font-semibold text-lg py-2'>{title}</h3>
+                    <Link href={hyperLink} target='_blank' className='text-blue-700'><h3 className='px-4 font-semibold text-lg py-2'>{title}</h3> </Link>
                     <p className='px-4 pb-4'>{description}</p>
                 </div>
             </div>

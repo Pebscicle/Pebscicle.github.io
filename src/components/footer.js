@@ -25,7 +25,7 @@ export default function Footer( {} ) {
                         
                     </h2>
                 </div>
-                <p>Placeholder (Disclaimer). NTD (Kevin) Need to add a disclaimer (As Is, Where Is acceptance of any reports, etc. This is educational only. User is responsible for engaging competent professional to provide any advice customized for business.</p>
+                <p>Placeholder Text. Placeholder Text. Placeholder Text. Placeholder Text. Placeholder Text. Placeholder Text. Placeholder Text. Placeholder Text. Placeholder Text. Placeholder Text. Placeholder Text. Placeholder Text. Placeholder Text. Placeholder Text. Placeholder Text. Placeholder Text. Placeholder Text. Placeholder Text. Placeholder Text. Placeholder Text. Placeholder Text. Placeholder Text. Placeholder Text. Placeholder Text. Placeholder Text. Placeholder Text. Placeholder Text. Placeholder Text. Placeholder Text. Placeholder Text. Placeholder Text. Placeholder Text. </p>
             </div>
         </div>
     );

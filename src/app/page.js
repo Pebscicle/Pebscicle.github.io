@@ -6,6 +6,7 @@ import Link from 'next/link';
 //Import Strings
 import enStrings from "../resources/strings/en.json";
 import frStrings from "../resources/strings/fr.json";
+import LanguageContext from "../components/LanguageContext";
 //Import Images
 import smiley from '../resources/img/Smiley.jpeg'
 
@@ -25,7 +26,7 @@ import Particle from '../components/Particles/Particle';
   //MUI Components
   import Alert from '@mui/material/Alert';
 
-import { useEffect, useState } from 'react';
+import { useEffect, useState, createContext, useContext } from 'react';
 import ProjectsGrid from "../components/projectsGrid";
 
 export default function Home() {
@@ -93,6 +94,7 @@ export default function Home() {
 
   return (
     <main className="">
+      <LanguageContext.Provider value={strings}>
       <header className="App-header header-background">
         <Navbar handleSwitchLanguage={(lang) => handleSwitchLanguage(lang)} languageString={strings.languages}></Navbar>
         <VerticalSpacing rows="5"></VerticalSpacing>
@@ -107,12 +109,26 @@ export default function Home() {
         <div id="page-content" className='page-content' style={pageContentStyle}>
           
           <ContentFlex>
-            <div className="">
-              <h1 className='text-2xl pb-2'>{strings.aboutHeader}</h1>
-              <p>{strings.about}</p>
+            <article className="">
+              <h1 className='text-2xl pb-2 font-semibold flex justify-center'>{strings.aboutHeader}</h1>
+              <div className='flex justify-center pt-8 pb-16'> <img src={'/pauldavis.jpeg'} alt='Headshot of Paul Davis' height={100} width={100} className='rounded-full'/> </div>
+              <p className='text-justify'>{strings.about}</p>
               <SocialMedia></SocialMedia>
-            </div>
+            </article>
           </ContentFlex>
+
+          <VerticalSpacing rows="5"></VerticalSpacing>
+
+          <div className="pt-8">
+
+            <h3 className="pt-2 pb-8 text-xl font-bold">{strings.myProjects}</h3>
+
+            <ProjectsGrid />
+
+            {/*<h3 className="pt-24 text-xl font-bold">{strings.myInterests}</h3>*/}
+
+            {/*<MapGrid />*/}
+          </div>
 
           <VerticalSpacing rows="5"></VerticalSpacing>
 
@@ -122,28 +138,15 @@ export default function Home() {
             </div>
             {true ? <></> : <EarthMap></EarthMap>}
             <div style={{marginLeft:"10px"}}>
-              <h3>Notable Places</h3>
               <ul>
-                <li>Chicago</li>
-                <li>Maryland</li>
-                <li>Michigan</li>
-                <li>France</li>
-                <li>Scotland</li>
+                <li>Chicago, IL, USA</li>
+                <li>Bethesda, MD, USA</li>
+                <li>Birmingham, MI, USA</li>
+                <li>Paris, France</li>
+                <li>Stirling, Scotland</li>
               </ul>
             </div>
           </ContentFlex>
-
-
-          <div className="pt-8">
-
-            <h3 className="pt-2 pb-8 text-xl font-bold">{strings.myProjects}</h3>
-
-            <ProjectsGrid />
-
-            <h3 className="pt-24 text-xl font-bold">{strings.myInterests}</h3>
-
-            <MapGrid />
-          </div>
           
 
 
@@ -152,7 +155,7 @@ export default function Home() {
       </div>
       
       {showAlert && <Alert severity="success" className="App-alert" onClose={() => setShowAlert(false)}>{strings.languageSwitchedAlert}</Alert>}
-
+      </LanguageContext.Provider>
     </main>
   );
 }

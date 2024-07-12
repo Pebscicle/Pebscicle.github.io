@@ -16,11 +16,11 @@ function SocialMedia( ) {
 
   return (
     <div className='social-medias'>
-        <a href="https://github.com/Pebscicle" target="_blank"><img src={github.src} alt="Github" height="48" width="48"></img></a>
-        <a href="https://www.linkedin.com/in/paul---davis/" target="_blank"><img src={linkedin.src} alt="LinkedIn" height="48" width="48"></img></a>
-        <a href="mailto:paul.davis438@gmail.com"><img src={email.src} alt="Email" height="48" width="48"></img></a>
+        <a href="https://github.com/Pebscicle" target="_blank" title='Github'><img src={github.src} alt="Github" height="48" width="48"></img></a>
+        <a href="https://www.linkedin.com/in/paul---davis/" target="_blank" title='LinkedIn'><img src={linkedin.src} alt="LinkedIn" height="48" width="48"></img></a>
+        <a href="mailto:paul.davis438@gmail.com" title='Email'><img src={email.src} alt="Email" height="48" width="48"></img></a>
         {/*IMPLEMENT CONDITIONAL DOWNLOADING BASED ON THE SELECTED LANGUAGE*/}
-        <a href="/Paul K. Davis Resume 2024.pdf" target="_blank"><img src={resume.src} alt="Resume" height="48" width="48"></img></a>
+        <a href="/Paul K. Davis Resume 2024.pdf" target="_blank" title='Resume/CV'><img src={resume.src} alt="Resume" height="48" width="48"></img></a>
     </div>
   );
 }

@@ -1,18 +1,20 @@
-.arrow-container{
+.arrow-container {
+  display: flex;
+  justify-content: center;
+  align-items: center; 
+  height: 200px; 
   position: relative;
-  bottom: 100px;
+  bottom: 150px;
 }
 
 .arrow-container .bouncing-arrow {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    animation: bounce 2s infinite;
-  }
+  position: absolute;
+  animation: bounce 2s infinite;
+}
 
-    .bouncing-arrow:hover{
-      cursor:pointer;
-    }
+.bouncing-arrow:hover {
+  cursor: pointer;
+}
   
   @keyframes bounce {
     0% {
