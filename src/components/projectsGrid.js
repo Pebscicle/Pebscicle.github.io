@@ -31,7 +31,7 @@ export default function ProjectsGrid() {
             <ProjectCard 
             title={strings.personalizedExplorationTrackingTitle}
             description={strings.personalizedExplorationTrackingDescription}
-            imgURL={"/PersonalizedExplorationTrackingScreenshot.png"}
+            imgURL={"/PersonalizedExplorationTrackingScreenshot.PNG"}
             link={`/explorationTracking?lang=${currentLanguage}`}
             hyperLink={'/explorationTracking'}
             /> 

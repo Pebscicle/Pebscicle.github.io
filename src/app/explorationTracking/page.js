@@ -26,7 +26,7 @@ export default function ExplorationTracking( {language} ) {
 
                 <figure className='page-img-container'>
                     <img 
-                    src='/PersonalizedExplorationTrackingScreenshot.png'
+                    src='/PersonalizedExplorationTrackingScreenshot.PNG'
                     className='page-img'
                     alt='Screenshot from PersonalizedExplorationTrackingScreenshot.png'
                     />
