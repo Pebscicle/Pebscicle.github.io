@@ -99,7 +99,7 @@ export default function Home() {
         <Navbar handleSwitchLanguage={(lang) => handleSwitchLanguage(lang)} languageString={strings.languages}></Navbar>
         <VerticalSpacing rows="5"></VerticalSpacing>
 
-        <img src={smiley.src} className="App-logo" alt="logo" style={logoStyle} />
+        {/*<img src={smiley.src} className="App-logo" alt="logo" style={logoStyle} />*/}
         <p>{strings.header}</p>
 
       </header>
