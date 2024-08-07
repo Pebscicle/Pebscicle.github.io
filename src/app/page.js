@@ -132,7 +132,7 @@ export default function Home() {
 
           <VerticalSpacing rows="5"></VerticalSpacing>
 
-          <ContentFlex>
+          {/*<ContentFlex>
             <div className="App-text-content">
               <h2 className="text-xl font-bold">{strings.whereFrom}</h2>
             </div>
@@ -146,7 +146,7 @@ export default function Home() {
                 <li>Stirling, Scotland</li>
               </ul>
             </div>
-          </ContentFlex>
+          </ContentFlex>*/}
           
 
 

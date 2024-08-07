@@ -25,7 +25,7 @@ export default function Footer( {} ) {
                         
                     </h2>
                 </div>
-                <p>Placeholder Text. Placeholder Text. Placeholder Text. Placeholder Text. Placeholder Text. Placeholder Text. Placeholder Text. Placeholder Text. Placeholder Text. Placeholder Text. Placeholder Text. Placeholder Text. Placeholder Text. Placeholder Text. Placeholder Text. Placeholder Text. Placeholder Text. Placeholder Text. Placeholder Text. Placeholder Text. Placeholder Text. Placeholder Text. Placeholder Text. Placeholder Text. Placeholder Text. Placeholder Text. Placeholder Text. Placeholder Text. Placeholder Text. Placeholder Text. Placeholder Text. Placeholder Text. </p>
+                {/*<p>Placeholder Text. Placeholder Text. Placeholder Text. Placeholder Text. Placeholder Text. Placeholder Text. Placeholder Text. Placeholder Text. Placeholder Text. Placeholder Text. Placeholder Text. Placeholder Text. Placeholder Text. Placeholder Text. Placeholder Text. Placeholder Text. Placeholder Text. Placeholder Text. Placeholder Text. Placeholder Text. Placeholder Text. Placeholder Text. Placeholder Text. Placeholder Text. Placeholder Text. Placeholder Text. Placeholder Text. Placeholder Text. Placeholder Text. Placeholder Text. Placeholder Text. Placeholder Text. </p>*/}
             </div>
         </div>
     );
