@@ -3,19 +3,16 @@
 import { useEffect, useState, useContext } from 'react';
 import VerticalSpacing from '../../components/Layout/VerticalSpacing';
 
+import { useSelector } from 'react-redux';
 import enStrings from "../../resources/strings/en.json";
 import frStrings from "../../resources/strings/fr.json";
 
-import { useSearchParams } from 'next/navigation';
-
 export default function ExplorationTracking( {language} ) {
 
-    
+  
+const language = useSelector((state) => state.app.language);
 
-    const searchParams = useSearchParams();
-    const lang = searchParams.get('lang');
-
-    const strings = lang === "en" ? enStrings : frStrings;
+const strings = language === "en" ? enStrings : frStrings;
 
     return (
         <main className="pt-24 page">

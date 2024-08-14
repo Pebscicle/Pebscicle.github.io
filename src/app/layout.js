@@ -3,6 +3,14 @@
 import { Inter } from "next/font/google";
 import "./App.css";
 
+import {useState} from 'react';
+import { Provider } from 'react-redux';
+import store from '../store/index';
+
+//Import Strings
+import enStrings from "../resources/strings/en.json";
+import frStrings from "../resources/strings/fr.json";
+import LanguageContext from "../components/LanguageContext";
 
 import Footer from '../components/footer'
 import Navbar from "../components/Navbar";
@@ -11,6 +19,8 @@ const inter = Inter({ subsets: ["latin"] });
 
 export default function RootLayout({ children }) {
   
+  const [language, setLanguage] = useState("en");
+  const strings = language === "en" ? enStrings : frStrings;
 
   return (
     <html lang="en">
@@ -31,20 +41,15 @@ export default function RootLayout({ children }) {
             <title>Paul K. Davis - Portfolio</title>
         </head>
       <body className={inter.className}>
+        <Provider store={store}>
         <div id='root'>
-          <Navbar></Navbar>
-            {/*<Link
-            key={"home"}
-            href={"/"}
-            className=""
-            >
-            <p>HOME</p>
-            </Link>*/}
+          <Navbar handleSwitchLanguage={(lang) => handleSwitchLanguage(lang)} languageString={strings.languages} />
             
-            {children}
+          {children}
             
-            <Footer />
+          {/*<Footer></Footer>*/}
         </div>
+        </Provider>
         </body>
     </html>
   );

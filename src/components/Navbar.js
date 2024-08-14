@@ -1,6 +1,9 @@
 'use client'
 
 import React from 'react';
+import { connect, useDispatch, useSelector } from 'react-redux';
+import { setLanguage } from '../actions/appActions';
+
 
 import './Navbar.css';
 
@@ -9,7 +12,18 @@ import './LanguageSelector'
 import LanguageSelector from './LanguageSelector';
 
 
-function Navbar( {handleSwitchLanguage, languageString} ) {
+function Navbar( {languageString} ) {
+
+
+  const dispatch = useDispatch();
+
+  const language = useSelector((state) => state.app.language);
+
+  const handleSwitchLanguage = (lang) => {
+    //setLanguage(lang);
+    // const handleModeChange = (event) => {
+    dispatch(setLanguage(lang));
+  };
 
   return (
     <nav className='navbar text-white'>
@@ -22,9 +36,11 @@ function Navbar( {handleSwitchLanguage, languageString} ) {
       </Link>
         
 
-        <LanguageSelector handleSwitchLanguage={(lang) => handleSwitchLanguage(lang)} languageString={languageString}></LanguageSelector>
+        <LanguageSelector handleSwitchLanguage={(lang) => handleSwitchLanguage(lang)} languageString={language === 'EN' ? 'English Version' : 'Version Française'}></LanguageSelector>
     </nav>
   );
 }
 
+
 export default Navbar;
+

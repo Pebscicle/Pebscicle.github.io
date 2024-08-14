@@ -27,12 +27,14 @@ import Particle from '../components/Particles/Particle';
   import Alert from '@mui/material/Alert';
 
 import { useEffect, useState, createContext, useContext } from 'react';
+import { useDispatch, useSelector } from 'react-redux';
 import ProjectsGrid from "../components/projectsGrid";
 
 export default function Home() {
 
-    const [language, setLanguage] = useState("en");
-    const strings = language === "en" ? enStrings : frStrings;
+    const dispatch = useDispatch();
+    const language = useSelector((state) => state.app.language);
+    const [strings, setStrings] = useState(enStrings);
 
     const [opacity, setOpacity] = useState(0);
 
@@ -43,13 +45,22 @@ export default function Home() {
   //APP EVENTS:
 
   //Callback Methods
-  const handleSwitchLanguage = (lang) => {
+  /*const handleSwitchLanguage = (lang) => {
     let isEnglish = lang === "EN";
     console.log(isEnglish ? "Switched the language to English." : "La langue à été changé au Français.")
 
     setLanguage(isEnglish ? "en" : "fr");
     setShowAlert(true);
-  }
+  }*/
+
+  // Callback Methods
+  /*const handleSwitchLanguage = (lang) => {
+    let isEnglish = lang === "EN";
+    console.log(isEnglish ? "Switched the language to English." : "La langue à été changé au Français.");
+
+    dispatch({ type: 'SET_LANGUAGE', payload: isEnglish ? "en" : "fr" });
+    setShowAlert(true);
+  };*/
 
   const handleArrowClick = () => {
     console.log("Arrow clicked");
@@ -78,6 +89,15 @@ export default function Home() {
     };
   }, []);
 
+  //Whenver language changes
+  useEffect(() => {
+    console.log('Language was changed to: ');
+    console.log(language);
+    const theStrings = language === "EN" ? enStrings : frStrings;
+    setStrings(theStrings);
+
+  }, [language])
+
   // Calculate the logo size based on opacity
   const logoSize = 200 - opacity*2; // You can adjust this formula to control the scaling effect.
 
@@ -93,10 +113,10 @@ export default function Home() {
   };
 
   return (
-    <main className="">
+    <main>
       <LanguageContext.Provider value={strings}>
       <header className="App-header header-background">
-        <Navbar handleSwitchLanguage={(lang) => handleSwitchLanguage(lang)} languageString={strings.languages}></Navbar>
+        {/*<Navbar handleSwitchLanguage={(lang) => handleSwitchLanguage(lang)} languageString={strings.languages}></Navbar>*/}
         <VerticalSpacing rows="5"></VerticalSpacing>
 
         {/*<img src={smiley.src} className="App-logo" alt="logo" style={logoStyle} />*/}
@@ -105,8 +125,8 @@ export default function Home() {
       </header>
       <BouncingArrow handleArrowClick={() => handleArrowClick()} ></BouncingArrow>
       
-      <div className='page'>
-        <div id="page-content" className='page-content' style={pageContentStyle}>
+      <div class="bg-gray-100 sm:p-4 md:p-8 lg:p-12" style={{top: '-200px', position: 'relative'}}>
+        <div id="page-content" class="bg-white shadow-lg rounded-lg p-6 sm:p-8 md:p-10 lg:p-12">
           
           <ContentFlex>
             <article className="">

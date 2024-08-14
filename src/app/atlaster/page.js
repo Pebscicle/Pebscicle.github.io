@@ -1,18 +1,15 @@
 'use client';
 
 import { useEffect, useState, useContext } from 'react';
-
+import { useSelector } from 'react-redux';
 import enStrings from "../../resources/strings/en.json";
 import frStrings from "../../resources/strings/fr.json";
 
-import { useSearchParams } from 'next/navigation';
-
 export default function Atlaster() {
 
-    const searchParams = useSearchParams();
-    const lang = searchParams.get('lang');
+    const language = useSelector((state) => state.app.language);
 
-    const strings = lang === "en" ? enStrings : frStrings;
+    const strings = language === "en" ? enStrings : frStrings;
 
     return (
         <main className="pt-24 page">
