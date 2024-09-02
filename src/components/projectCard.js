@@ -1,8 +1,22 @@
 'use client';
  
 import { useEffect, useState } from 'react';
-import './ProjectCard.css';
 import Link from 'next/link';
+
+const styles = {
+    skillTag: {
+        width: 'fit-content',
+        color: 'black',
+        borderRadius: '5px',
+        height: '23px',
+        padding: '0 15px',
+
+        display: 'flex',
+        justifyContent: 'center',
+        alignItems: 'center',
+        flexWrap: 'wrap',
+    }
+}
  
 export default function ProjectCard( {title, description, imgURL, link, hyperLink, skills} ) {
     return (
@@ -22,7 +36,7 @@ export default function ProjectCard( {title, description, imgURL, link, hyperLin
                 <div>
                 <div className='px-4' style={{display: 'flex', gap: '4px', flexWrap: 'wrap', marginTop: '1rem', marginBottom: '8px'}}>
                     {skills && skills.map((skill, index) => (
-                        <span key={index} className='skillTag text-xs' style={{backgroundColor: '#e4e4e4'}}>
+                        <span key={index} className='text-xs' style={{ ...styles.skillTag, backgroundColor: '#e4e4e4' }}>
                             {skill}
                         </span>
                     ))}
