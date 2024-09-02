@@ -7,7 +7,7 @@ import { useSelector } from 'react-redux';
 import enStrings from "../../resources/strings/en.json";
 import frStrings from "../../resources/strings/fr.json";
 
-export default function ExplorationTracking( {language} ) {
+export default function ExplorationTracking( {} ) {
 
   
 const language = useSelector((state) => state.app.language);
