@@ -43,7 +43,7 @@ export default function RootLayout({ children }) {
       <body className={inter.className}>
         <Provider store={store}>
         <div id='root'>
-          <Navbar handleSwitchLanguage={(lang) => handleSwitchLanguage(lang)} languageString={strings.languages} />
+          <Navbar handleSwitchLanguage={(lang) => setLanguage(lang)} languageString={strings.languages} />
             
           {children}
             
