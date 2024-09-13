@@ -23,11 +23,13 @@ export default function ProjectCard( {title, description, imgURL, link, hyperLin
         <div className='bg-gray-50 pb-4 rounded shadow-md flex justify-around flex-col'>
             <div>
                 <div className='flex flex-col items-center bg-gray-500'>
+                    {imgURL &&
                     <img 
                     src={imgURL}
                     style={{maxWidth: '100%', maxHeight: '300px', objectFit: 'contain'}}
                     alt={`Screenshot from ${imgURL}`}
                     />
+                    }
                 </div>
                 <div className=''>
                     <Link href={hyperLink} target='_blank' className='text-blue-700'><h3 className='px-4 font-semibold text-lg py-2'>{title}</h3> </Link>

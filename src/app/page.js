@@ -3,6 +3,8 @@
 import Image from "next/image";
 import Link from 'next/link';
 
+import { useMediaQuery } from "@mui/material";
+
 //Import Strings
 import enStrings from "../resources/strings/en.json";
 import frStrings from "../resources/strings/fr.json";
@@ -33,6 +35,7 @@ import ProjectsGrid from "../components/projectsGrid";
 export default function Home() {
 
     const dispatch = useDispatch();
+    const isMobile = useMediaQuery('(max-width:768px)');
     const language = useSelector((state) => state.app.language);
     const [strings, setStrings] = useState(enStrings);
 
@@ -112,6 +115,8 @@ export default function Home() {
     height: logoSize + 'px',
   };
 
+  console.log(strings.about);
+
   return (
     <main>
       <LanguageContext.Provider value={strings}>
@@ -126,14 +131,18 @@ export default function Home() {
       <BouncingArrow handleArrowClick={() => handleArrowClick()} ></BouncingArrow>
       
       <div class="bg-gray-100 sm:p-4 md:p-8 lg:p-12" style={{top: '-200px', position: 'relative'}}>
-        <div id="page-content" class="bg-white shadow-lg rounded-lg p-6 sm:p-8 md:p-10 lg:p-12">
+        <div id="page-content" class="bg-white shadow-lg rounded-lg p-6 sm:p-8 md:p-10 lg:p-12 wave-background">
           
           <ContentFlex>
-            <article className="">
-              <h1 className='text-2xl pb-2 font-semibold flex justify-center'>{strings.aboutHeader}</h1>
-              <div className='flex justify-center pt-8 pb-16'> <img src={'/pauldavis.jpeg'} alt='Headshot of Paul Davis' height={100} width={100} className='rounded-full'/> </div>
-              <p className='text-justify'>{strings.about}</p>
-              <SocialMedia lang={language}></SocialMedia>
+            <article style={{display: 'flex', justifyContent: 'center', width: '100%'}}>
+              <div style={{maxWidth: isMobile ? '95vw' : '800px'}}>
+                <h1 className='text-2xl pb-2 font-semibold flex justify-center'>{strings.aboutHeader}</h1>
+                <div className='flex justify-center pt-8 pb-16'> <img src={'/pauldavis.jpeg'} alt='Headshot of Paul Davis' height={100} width={100} className='rounded-full'/> </div>
+                {strings.about.map((para, index) => (
+                  <p key={index} className='glossy-container text-justify pt-4'>{para}</p>
+                ))}
+                <SocialMedia lang={language}></SocialMedia>
+              </div>
             </article>
           </ContentFlex>
 
@@ -145,30 +154,9 @@ export default function Home() {
 
             <ProjectsGrid />
 
-            {/*<h3 className="pt-24 text-xl font-bold">{strings.myInterests}</h3>*/}
-
-            {/*<MapGrid />*/}
           </div>
 
           <VerticalSpacing rows="5"></VerticalSpacing>
-
-          {/*<ContentFlex>
-            <div className="App-text-content">
-              <h2 className="text-xl font-bold">{strings.whereFrom}</h2>
-            </div>
-            {true ? <></> : <EarthMap></EarthMap>}
-            <div style={{marginLeft:"10px"}}>
-              <ul>
-                <li>Chicago, IL, USA</li>
-                <li>Bethesda, MD, USA</li>
-                <li>Birmingham, MI, USA</li>
-                <li>Paris, France</li>
-                <li>Stirling, Scotland</li>
-              </ul>
-            </div>
-          </ContentFlex>*/}
-          
-
 
 
         </div>

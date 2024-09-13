@@ -11,7 +11,7 @@ export default function PickYourGC() {
 
     const language = useSelector((state) => state.app.language);
 
-    const strings = language === "en" ? enStrings : frStrings;
+    const strings = language === "EN" ? enStrings : frStrings;
 
     return (
         <main className="pt-24 page">

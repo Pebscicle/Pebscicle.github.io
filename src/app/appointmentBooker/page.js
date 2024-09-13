@@ -1,12 +1,10 @@
 'use client';
 
-import Link from 'next/link';
-import { useEffect, useState, useContext } from 'react';
 import { useSelector } from 'react-redux';
 import enStrings from "../../resources/strings/en.json";
 import frStrings from "../../resources/strings/fr.json";
 
-export default function Atlaster() {
+export default function AppointmentBooker() {
 
     const language = useSelector((state) => state.app.language);
 
@@ -15,18 +13,18 @@ export default function Atlaster() {
     return (
         <main className="pt-24 page">
             <div className="page-margins">
-                <Link href='https://atlaster.com' target='_blank' style={{color: 'royalblue', textDecoration: 'underline', cursor: 'pointer'}}><h1 className='text-lg font-bold pb-8'>Atlaster</h1></Link>
+                <h1 className='text-lg font-bold pb-8'>{strings.webServicesAppointmentBookerTitle}</h1>
 
-                <p>{strings.atlasterSummary}</p>
+                <p>{strings.webServicesAppointmentBookerSummary}</p>
 
-                <figure className='page-img-container'>
+                {/*<figure className='page-img-container'>
                     <img 
                     src='/AtlasterScreenshot.png'
                     className='page-img'
                     alt='Screenshot from Atlaster.com'
                     />
                     <figcaption>{strings.atlasterCaption}</figcaption>
-                </figure>
+                </figure>*/}
 
             </div>
         </main>

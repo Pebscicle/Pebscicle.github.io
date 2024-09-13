@@ -7,6 +7,7 @@ import {useState} from 'react';
 import { Provider } from 'react-redux';
 import store from '../store/index';
 
+
 //Import Strings
 import enStrings from "../resources/strings/en.json";
 import frStrings from "../resources/strings/fr.json";
@@ -21,6 +22,7 @@ export default function RootLayout({ children }) {
   
   const [language, setLanguage] = useState("en");
   const strings = language === "en" ? enStrings : frStrings;
+  
 
   return (
     <html lang="en">

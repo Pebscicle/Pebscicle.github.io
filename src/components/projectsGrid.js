@@ -34,6 +34,14 @@ export default function ProjectsGrid() {
             link: `/explorationTracking?lang=${currentLanguage}`,
             hyperLink: '/explorationTracking',
             skills: ['Mobile Development', 'JavaScript', 'Java', 'Requirements Gathering', 'User Testing', 'OOP', 'APIs', 'Web Services', 'React Native', 'Google APIs', 'git', 'npm', 'Responsive', 'Cross-platform']
+        },
+        {
+            title: "Web Services Project: Appointment Booker",
+            description:  strings.webServicesAppointmentBookerDescription,
+            imgURL: '',
+            link: `/appointmentBooker?lang=${currentLanguage}`,
+            hyperLink: '/appointmentBooker',
+            skills: ['Web Services', 'REST API', 'Java', 'Spring Boot', 'React.js', 'JavaScript', 'HTML', 'CSS', 'Web Development', 'CORS', 'git']
         }
     ];
 
