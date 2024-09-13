@@ -5,7 +5,8 @@
     "aboutHeader": "My name is Paul.",
     "about": ["I recently graduated with a Bachelor's of Science with Honors in Computer Science from the University of Stirling in Scotland. I am a hardworking and highly motivated Full-Stack Developer with exceptional adaptation skills as exemplified by my life experience. My expertise includes the front-end web development stack (HTML, CSS, JavaScript) and extensive experience with the React ecosystem (React, Next.js, React Native) and Blazor. I am proficient in building user-centric interfaces that prioritize user experience (UX). My back-end knowledge encompasses languages like Java and C#, along with proficiency in SQL, relational and NoSQL databases, and version control systems such as Git. Additionally, I have experience using frameworks like Spring Boot and have designed secure and well-structured APIs that follow RESTful principles.",
 "In part thanks to my academic coursework and internship experiences, I have consistently demonstrated a strong aptitude for algorithms, data structures, software development principles, and various programming languages. My experience growing up in both France and the United States has instilled in me a strong sense of adaptability. Navigating different cultures and social norms honed my ability to learn quickly, adjust to new environments, and effectively communicate with diverse people. My strong problem-solving and analytical skills enable me to excel in both academic and practical settings. I am confident that my diverse skillset and unwavering dedication to excellence will make me a valuable asset to any organization seeking a skilled and passionate developer."],
-    "contact": "Contact Us",
+    
+    "contact": "You can reach me and learn more about my work:",
     "whereFrom": "Where I am from",
     "myProjects": "My projects",
     "myInterests": "My interests",
