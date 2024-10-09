@@ -31,6 +31,7 @@ import Particle from '../components/Particles/Particle';
 import { useEffect, useState, createContext, useContext } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import ProjectsGrid from "../components/projectsGrid";
+import LandingView from "../components/LandingView";
 
 export default function Home() {
 
@@ -94,8 +95,6 @@ export default function Home() {
 
   //Whenver language changes
   useEffect(() => {
-    console.log('Language was changed to: ');
-    console.log(language);
     const theStrings = language === "EN" ? enStrings : frStrings;
     setStrings(theStrings);
 
@@ -115,23 +114,18 @@ export default function Home() {
     height: logoSize + 'px',
   };
 
-  console.log(strings.about);
-
   return (
     <main>
       <LanguageContext.Provider value={strings}>
-      <header className="App-header header-background">
-        {/*<Navbar handleSwitchLanguage={(lang) => handleSwitchLanguage(lang)} languageString={strings.languages}></Navbar>*/}
-        <VerticalSpacing rows="5"></VerticalSpacing>
 
-        {/*<img src={smiley.src} className="App-logo" alt="logo" style={logoStyle} />*/}
-        <p>{strings.header}</p>
+      <LandingView 
+        
+      />
 
-      </header>
       <BouncingArrow handleArrowClick={() => handleArrowClick()} ></BouncingArrow>
       
-      <div class="bg-gray-100 sm:p-4 md:p-8 lg:p-12" style={{top: '-200px', position: 'relative'}}>
-        <div id="page-content" class="bg-white shadow-lg rounded-lg p-6 sm:p-8 md:p-10 lg:p-12 wave-background">
+      <div className="bg-gray-100 sm:p-4 md:p-8 lg:p-12" style={{top: '-200px', position: 'relative'}}>
+        <div id="page-content" className="bg-white shadow-lg rounded-lg p-6 sm:p-8 md:p-10 lg:p-12 wave-background">
           
           <ContentFlex>
             <article style={{display: 'flex', justifyContent: 'center', width: '100%'}}>
