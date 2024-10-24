@@ -26,6 +26,9 @@
   "webServicesAppointmentBookerTitle": "Système de Réservation Full-Stack avec Intégration d'API REST",
   "webServicesAppointmentBookerDescription": "J'ai développé un système de réservation de rendez-vous full-stack avec un back-end Java/Spring Boot, un front-end React, et une API REST pour la communication.",
   "webServicesAppointmentBookerSummary": "Lors de mes études à l'Université de Stirling, j'ai développé un système complet de réservation de rendez-vous, combinant un back-end robuste basé sur Java et Spring Boot avec un front-end fluide en React. J'ai également implémenté une API REST pour assurer une communication efficace entre le front-end et le back-end. Ce projet m'a permis de maîtriser le développement full-stack tout en assurant une expérience utilisateur optimale. Ce fut un grand accomplissement car j'ai pu mener ce projet de bout en bout, tout en appliquant les meilleures pratiques de développement logiciel.",
+  "weathersterDescription": "Une application monopage (SPA) en React.js permettant aux utilisateurs d'obtenir des données météorologiques à jour pour leur emplacement actuel, entre autres, de manière simple et ludique.",
+  "weathersterSummary": "Weatherster est une application monopage développée avec React.js, qui permet aux utilisateurs d'obtenir les dernières données météorologiques de leur emplacement actuel et d'autres lieux de manière simple et ludique. Elle intègre une API météorologique ainsi qu'une API de géocodage inversé. Elle utilise également three.js pour afficher des animations 3D amusantes représentant le temps actuel.",
+  "weathersterCaption": "Capture d'écran de weatherster.vercel.app",
 
   "ALERTS": "NA",
 
