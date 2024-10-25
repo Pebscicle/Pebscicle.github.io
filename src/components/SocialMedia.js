@@ -14,7 +14,7 @@ import resume from '../resources/img/icons/socialMedia-resume.png';
 
 function SocialMedia( {lang} ) {
 
-  const resumeLink = lang === 'en' ? "/Paul K. Davis Resume 2024.pdf" : "/cvPaulDavis.pdf";
+  const resumeLink = lang === 'EN' ? "/Paul K. Davis Resume 2024.pdf" : "/cvPaulDavis.pdf";
 
   return (
     <div className='social-medias'>

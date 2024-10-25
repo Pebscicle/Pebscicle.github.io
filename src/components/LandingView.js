@@ -4,6 +4,12 @@ import { useEffect, useState } from 'react';
 import dynamic from 'next/dynamic';
 import VerticalSpacing from './Layout/VerticalSpacing';
 
+import Clouds from './3D/Clouds';
+import Rain from './3D/Rain';
+import Snow from './3D/Snow';
+import Sun from './3D/Sun';
+import Thunderstorm from './3D/Thunderstorm';
+
 export default function LandingView({ somethingElse }) {
     const [weatherHometown, setWeatherHometown] = useState(null);
     const [weatherNow, setWeatherNow] = useState(null);
@@ -21,7 +27,7 @@ export default function LandingView({ somethingElse }) {
     };
 
     useEffect(() => {
-        fetchWeather('Paris', 'Chicago');
+        fetchWeather('Brussels', 'Chicago');
     }, []);
 
     useEffect(() => {
@@ -44,7 +50,7 @@ export default function LandingView({ somethingElse }) {
             <HometownWidget 
                 weather={weatherNow}
                 title="Where I am now"
-                town='Paris, France'
+                town='Brussels, Belgium'
                 sideIsLeft={false}
             />
         </header>
@@ -63,12 +69,6 @@ function HometownWidget({ weather, title, town, sideIsLeft }) {
         night: '#191970',        // Dark navy blue for night
         snowy: '#F0FFFF',        // Very light blue/white for snowy weather
     };
-
-    const Sun = dynamic(() => import('./3D/Sun'), { ssr: false });
-    const Clouds = dynamic(() => import('./3D/Clouds'), { ssr: false});
-    const Rain = dynamic(() => import('./3D/Rain'), { ssr: false});
-    const Thunderstorm = dynamic(() => import('./3D/Thunderstorm'), { ssr: false});
-    const Snow = dynamic(() => import('./3D/Snow'), { ssr: false});
     
 
     const [skyColor, setSkyColor] = useState(Sky.sunny);

@@ -8,7 +8,7 @@ import "../app/App.css"
 export default function Footer( {} ) {
 
     return(
-        <div className='bg-slate-900 mt-8'>
+        <div className='bg-slate-900'>
             <div className='text-sm px-16 py-8 text-white'>
                 <div className='py-8 flex justify-between '>
                     <h2>

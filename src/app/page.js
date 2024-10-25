@@ -68,7 +68,7 @@ export default function Home() {
 
   const handleArrowClick = () => {
     console.log("Arrow clicked");
-    document.getElementById('page-content').scrollIntoView();
+    document.getElementById('page-start').scrollIntoView();
     window.scrollBy(0, -60);
   }
 
@@ -124,14 +124,12 @@ export default function Home() {
 
       <BouncingArrow handleArrowClick={() => handleArrowClick()} ></BouncingArrow>
       
-      <div className="bg-gray-100 sm:p-4 md:p-8 lg:p-12" style={{top: '-200px', position: 'relative'}}>
-        <div id="page-content" className="bg-white shadow-lg rounded-lg p-6 sm:p-8 md:p-10 lg:p-12 wave-background">
-          
+      <div className="bg-gray-100 sm:p-4 md:p-8 lg:p-12" id='page-start'>
           <ContentFlex>
             <article style={{display: 'flex', justifyContent: 'center', width: '100%'}}>
               <div style={{maxWidth: isMobile ? '95vw' : '800px'}}>
                 <h1 className='text-2xl pb-2 font-semibold flex justify-center'>{strings.aboutHeader}</h1>
-                <div className='flex justify-center pt-8 pb-16'> <img src={'/pauldavis.jpeg'} alt='Headshot of Paul Davis' height={100} width={100} className='rounded-full'/> </div>
+                <div className='flex justify-center pt-8 pb-16'> <img src={'/pauldavis.png'} alt='Headshot of Paul Davis' height={100} width={100} className='rounded-full'/> </div>
                 {strings.about.map((para, index) => (
                   <p key={index} className='glossy-container text-justify'>{para}</p>
                 ))}
@@ -143,7 +141,7 @@ export default function Home() {
 
           <VerticalSpacing rows="5"></VerticalSpacing>
 
-          <div className="pt-8">
+          <div className="pt-8" id='projects'>
 
             <h3 className="pt-2 pb-8 text-xl font-bold">{strings.myProjects}</h3>
 
@@ -153,10 +151,8 @@ export default function Home() {
 
           <VerticalSpacing rows="5"></VerticalSpacing>
 
-
-        </div>
       </div>
-      
+
       {showAlert && <Alert severity="success" className="App-alert" onClose={() => setShowAlert(false)}>{strings.languageSwitchedAlert}</Alert>}
       </LanguageContext.Provider>
     </main>

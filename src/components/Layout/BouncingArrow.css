@@ -2,9 +2,9 @@
   display: flex;
   justify-content: center;
   align-items: center; 
-  height: 200px; 
-  position: relative;
-  bottom: 150px;
+  width: 100%;
+  /*position: relative;
+  bottom: 150px;*/
 }
 
 .arrow-container .bouncing-arrow {
