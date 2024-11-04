@@ -1,18 +1,21 @@
+<h1>Paul K. Davis</h1>
+<h2><a href="https://paulkdavis.vercel.app/">Personal Portfolio</a></h2>
 
+<h2>Featured Projects</h2>
+<ul>
+  <li><strong><a href="https://www.atlaster.com">Atlaster</a></strong> - An interactive web application for tracking and discovering visited countries</li>
+  <li><strong><a href="https://weatherster.vercel.app">Weatherster</a></strong> - A weather application</li>
+  <li><strong>Route Exploration Mobile App</strong> - A dissertation project that tracks user movements and provides insights about demographic patterns in explored areas</li>
+</ul>
 
-<html>
-  <body>
-    <h1>Here is my personal website: <a href="https://paulkdavis.vercel.app/">Paul K. Davis Portfolio Website/</a></h1>
-    <h2>In progress atlas/exploration website: <a href="https://www.atlaster.com">Atlaster</a></h2>
-    <p>My name is Paul Davis, I’m a 4th year computer science student graduating in May 2024 with honors from the University of Stirling.
-I am passionate about geography and maps and could spend hours looking at them.
-In my last year at university, I wrote a 14,000 dissertation documenting the creation from start to finish of a mobile application
-that tracks a user’s movements over time and based off that data,
-the user can learn about various statistics that inform them about either the type of people they are or who they tend to live around.</p>
-    <p>Some of my favorite websites are the following: 
-https://earth.google.com/ 
-https://www.geoguessr.com/</p>
-    <p>If you have any questions, do not hesitate to reach out to me via my email.</p>
-  </body>
-</html>
+<h2>About Me</h2>
+<p>I'm a Computer Science graduate (Honours) from the University of Stirling with a passion for geography and maps. In my final year, I developed a mobile application that analyzes user movement patterns to provide insights about local demographics and exploration habits.</p>
 
+<h2>Interests</h2>
+<p>I'm an avid user of geographic tools and platforms like:</p>
+<ul>
+  <li><a href="https://earth.google.com/">Google Earth</a></li>
+  <li><a href="https://www.geoguessr.com/">GeoGuessr</a></li>
+</ul>
+
+<p>Feel free to reach out via email to discuss potential collaborations or just to chat about maps and technology!</p>
