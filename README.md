@@ -4,6 +4,9 @@
 <h2>Featured Projects</h2>
 <ul>
   <li><strong><a href="https://www.atlaster.com">Atlaster</a></strong> - An interactive web application for tracking and discovering visited countries</li>
+  <ul>
+    <li><strong><a href="https://www.atlaster.com/usa/elections">US Elections</a></strong> - A handy tool for looking up historical election data.</li>
+  </ul>
   <li><strong><a href="https://weatherster.vercel.app">Weatherster</a></strong> - A weather application</li>
   <li><strong>Route Exploration Mobile App</strong> - A dissertation project that tracks user movements and provides insights about demographic patterns in explored areas</li>
 </ul>
